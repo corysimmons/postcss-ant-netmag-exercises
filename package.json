@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "npm-run-all sass:build -p sass:watch postcss:* browser-sync",
+
+    "sass:build": "node-sass exercises/sample-code-3/in.scss exercises/sample-code-3/out.css --output-style expanded",
+    "sass:watch": "node-sass -w exercises/sample-code-3/in.scss exercises/sample-code-3/out.css --output-style expanded",
+
+    "postcss:sample-code-1": "postcss -w -u postcss-ant -o exercises/sample-code-1/final.css exercises/sample-code-1/in.css",
+    "postcss:sample-code-2": "postcss -w -u postcss-ant -o exercises/sample-code-2/final.css exercises/sample-code-2/in.css",
+    "postcss:sample-code-3": "postcss -w -u postcss-ant -o exercises/sample-code-3/final.css exercises/sample-code-3/out.css",
+
+    "browser-sync": "browser-sync start -s --no-open --no-notify --no-online --files 'exercises/**/index.html, exercises/common.css, exercises/**/final.css'"
+  },
+  "devDependencies": {
+    "browser-sync": "2.14.3",
+    "node-sass": "3.8.0",
+    "npm-run-all": "^3.1.0",
+    "postcss-ant": "*",
+    "postcss-cli": "2.6.0"
+  }
+}

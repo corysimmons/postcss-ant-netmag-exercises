@@ -1,0 +1,24 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  margin-right: 30px;
+}
+
+.column:nth-child(3n + 1) {
+  width: ant(100px 1/2 1/2, 30px)[1];
+}
+
+.column:nth-child(3n + 2) {
+  width: ant(100px 1/2 1/2, 30px)[2];
+}
+
+.column:nth-child(3n + 3) {
+  width: ant(100px 1/2 1/2, 30px)[3];
+}
+
+.column:nth-child(3n + 3) {
+  margin-right: 0;
+}

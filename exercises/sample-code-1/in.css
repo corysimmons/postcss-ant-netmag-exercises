@@ -1,0 +1,13 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half {
+  width: ant(1/2)[1];  /* returns calc(99.99% * 1/2 - (30px - 30px * 1/2)) */
+  margin-right: 30px;  /* puts a gutter on the right side of each column */
+}
+
+.half:nth-child(2n + 2) {  /* starts at the 2nd element and begins counting by 2's */
+  margin-right: 0;  /* removes the last gutter from every row */
+}
