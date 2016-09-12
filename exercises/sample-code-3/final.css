@@ -22,3 +22,29 @@
 .column:nth-child(3n + 3) {
   margin-right: 0;
 }
+
+.golden-ratio-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.golden-ratio-grid > *  {
+  margin-right: 30px;
+}
+
+.golden-ratio-grid > *:nth-child(4n + 1)  {
+  width: calc(99.99% * 1/9.471725032000002 - (30px - 30px * 1/9.471725032000002));
+}
+
+.golden-ratio-grid > *:nth-child(4n + 2)  {
+  width: calc(99.99% * 1.618/9.471725032000002 - (30px - 30px * 1.618/9.471725032000002));
+}
+
+.golden-ratio-grid > *:nth-child(4n + 3)  {
+  width: calc(99.99% * 2.6179240000000004/9.471725032000002 - (30px - 30px * 2.6179240000000004/9.471725032000002));
+}
+
+.golden-ratio-grid > *:nth-child(4n + 4)  {
+  width: calc(99.99% * 4.235801032000001/9.471725032000002 - (30px - 30px * 4.235801032000001/9.471725032000002));
+  margin-right: 0;
+}
