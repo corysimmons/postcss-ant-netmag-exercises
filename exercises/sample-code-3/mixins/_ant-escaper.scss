@@ -1,4 +1,0 @@
-// https://github.com/corysimmons/postcss-ant-preprocessor-escapers
-@function ant($args, $index) {
-  @return unquote('ant(#{$args})[#{$index}]');
-}

@@ -5,6 +5,7 @@
 
 .half {
   width: calc(99.99% * 1/2 - (30px - 30px * 1/2));  /* returns calc(99.99% * 1/2 - (30px - 30px * 1/2)) */
+  /* I introduced size() recently, so you can use that when you only have 1 size, then you don't need pluck(). It's still good you learned how pluck() works because it's very useful! */
   margin-right: 30px;  /* puts a gutter on the right side of each column */
 }
 

@@ -4,7 +4,7 @@
 }
 
 .fixed-size {
-  width: 100px; /* returns 100px (I know it seems silly but bear with me for a bit longer) */
+  width: 100px;  /* returns 100px (I know it seems silly but bear with me for a bit longer) */
   margin-right: 30px;
 }
 

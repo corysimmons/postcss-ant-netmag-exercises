@@ -4,12 +4,12 @@
 }
 
 .fixed-size {
-  width: ant(100px 1/2)[1]; /* returns 100px (I know it seems silly but bear with me for a bit longer) */
+  width: sizes(100px 1/2) pluck(1);  /* returns 100px (I know it seems silly but bear with me for a bit longer) */
   margin-right: 30px;
 }
 
 .half {
-  width: ant(100px 1/2)[2];  /* returns calc((99.99% - (100px + (30px * 1))) * 1/2 - (30px - 30px * 1/2)) */
+  width: sizes(100px 1/2) pluck(2);  /* returns calc((99.99% - (100px + (30px * 1))) * 1/2 - (30px - 30px * 1/2)) */
   margin-right: 30px;
 }
 

@@ -8,17 +8,21 @@
 }
 
 .column:nth-child(3n + 1) {
-  width: ant(100px 1/2 1/2, 30px)[1];
+  width: sizes(100px 1/2 1/2) pluck(1) gutter(30px);
 }
 
 .column:nth-child(3n + 2) {
-  width: ant(100px 1/2 1/2, 30px)[2];
+  width: sizes(100px 1/2 1/2) pluck(2) gutter(30px);
 }
 
 .column:nth-child(3n + 3) {
-  width: ant(100px 1/2 1/2, 30px)[3];
+  width: sizes(100px 1/2 1/2) pluck(3) gutter(30px);
 }
 
 .column:nth-child(3n + 3) {
   margin-right: 0;
+}
+
+.golden-ratio-grid {
+  generate-grid: sizes(ratio(1.618, 0) ratio(1.618, 1) ratio(1.618, 2) ratio(1.618, 3));
 }
