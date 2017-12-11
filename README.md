@@ -1,5 +1,7 @@
 # postcss-ant-netmag-exercises
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/corysimmons/postcss-ant-netmag-exercises.svg)](https://greenkeeper.io/)
+
 Resources to accompany postcss-ant's .net mag article.
 
 ### Installation
